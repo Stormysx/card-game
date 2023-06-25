@@ -1,0 +1,159 @@
+/* Genel stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Kartlar */
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #f0f0f0;
+}
+
+.card .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Kart sayıları */
+#count-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.count {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+/* Sıfırla butonu */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #008dff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005cbf;
+}
+
+/* Tüccar mesajı */
+#merchant-message {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+/* Para çubuğu */
+#money-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+#money-amount {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.selected {
+  background-color: #ffffff;
+}
+
+
+
+/* Menü */
+#menu-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+#menu-container h2 {
+  margin-bottom: 10px;
+}
+
+#menu-container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#menu-container li {
+  margin-bottom: 10px;
+}
+
+#menu-container button {
+  margin-top: 10px;
+}
+
+/* Fiyatlar */
+#menu-container .price {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  color: #333;
+}
